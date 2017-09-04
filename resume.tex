@@ -1,0 +1,99 @@
+% !TEX program = xelatex
+
+\documentclass{resume}
+\usepackage{xltxtra,fontspec,xunicode}
+\usepackage[slantfont,boldfont]{xeCJK} % 允许斜体和粗体
+\usepackage{tabularx}
+%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+
+\usepackage{titlesec}
+
+% Spacing corresponding to `book` class
+% \titlespacing*{\section} {0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+% \titlespacing*{\subsection} {0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+% Spacing before/after reduced by 1ex each
+\titlespacing*{\section} {0pt}{0ex plus 1ex minus .2ex}{1.3ex plus .2ex}
+
+\begin{document}
+	\pagenumbering{gobble} % suppress displaying page number
+	
+	\name{周南光(ZHOU NANGUANG)}
+	
+	\basicInfo{
+		\phone{(+86) 136-868-27239} 
+		\email{\underline{541402349@qq.com}} 
+		\faBook\ \hyperref[http://blog.csdn.net/qwop446]{\underline{http://blog.csdn.net/qwop446}}}
+	\section{\faGraduationCap\ Education 教育经历}
+
+	\begin{tabularx}{\textwidth}{@{}X X X r@{}}
+		\textbf{深圳大学 (SZU)} & \textbf{数学与统计学院} & \textbf{统计学} & 2015.9 -- 2018.6 \\
+		\multicolumn{4}{@{}l}{{学术型硕士} GPA: 89/100，统计计算研究所，校级推免奖学金}
+	\end{tabularx}
+	\begin{tabularx}{\textwidth}{@{}X X X r@{}}
+		\textbf{深圳大学 (SZU)} & \textbf{数学与统计学院} & \textbf{应用数学} & 2011.9 -- 2015.6 \\
+		\multicolumn{4}{@{}l}{{本科} GPA: 3.8/4，校级一等、特等奖学金}
+	\end{tabularx}
+	
+	\section{\faUsers\ Experience 实习经历}
+	\begin{tabularx}{\textwidth}{@{}X X X r@{}}
+	\textbf{平安人寿集团}, 深圳 & \textbf{大数据智能平台部} & \textbf{数据挖掘组} & 2017.08 -- Present \\
+	\end{tabularx}
+	\begin{itemize}
+		\item 实习期间接触人寿保险部门的业务人员定向增员和绩优人员的画像项目，负责部分数据分析和建模。涉及的主要业务模型有kMeans聚类，梯度上升树，逻辑回归等。使用的大数据平台有Spark/hadoop/hive。 
+	\end{itemize}
+
+	\begin{tabularx}{\textwidth}{@{}X X X r@{}}
+	\textbf{华润置地集团}, 深圳& \textbf{信息管理部 } & \textbf{成本测算分析实习} & 2017.05 -- 2017.06 \\
+\end{tabularx}
+\begin{itemize}
+	\item 协助所在部门总监进行项目的跟进和管理，具体是处理华润内部房地产开发项目所涉及的数据，对新研发的测算系统的数据录入、校对，以及该系统上线前的测试。在项目成功上线后结束实习，工作中涉及的专业技能或软件为SQL、EXCEL。实习结束获得HR的好评以及项目经理对业务能力的认可。 
+\end{itemize}
+
+	\begin{tabularx}{\textwidth}{@{}X X X r@{}}
+	\textbf{咫尺网络科技 }, 深圳 & \textbf{前端开发组} & \textbf{研发实习生} & 2015.03 -- 2015.07 \\
+\end{tabularx}
+\begin{itemize}
+	\item 参与公司产品技术研发，具体包括H5设计工具的WEB前端重构和开发以及用户后台数据的可视化。实习期间使用到Javascript、Html/CSS，SVN等开发工具，先后独立开发了移动端滑页动画，定时翻页、设计操作中的撤销、后退等功能（包括网页重构）。本人在工作上能够顺利完成项目需求，跟进产品版本迭代，生活中积极参加团队建设活动，实习结束后获得实习公司的好评。
+\end{itemize}
+	
+	% Reference Test
+	%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+	%An xxx optimized for xxx\cite{verma2015large}
+	%\begin{itemize}
+	%  \item main contribution
+	%\end{itemize}
+	
+	\section{\faGraduationCap\ 项目、竞赛经历}
+	\begin{tabularx}{\textwidth}{@{}X X r@{}}
+		\textbf{Kaggle数据挖掘竞赛} & \textbf{Zillow-price} & 2015.08 -- Present \\
+	\end{tabularx}
+	\begin{itemize}
+		\item 十一前，随着 Zillow 的诞生，房价估计算法 Zestimate 作为 Zillow 的核心功能，也一同出现在人们的眼前，深深地改变了美国的房地产行业。Zestimate 机器学习模型建立在美国750万房屋交易历史数据之上，分析每个房屋上百个特征。
+	\end{itemize}
+	
+	\begin{tabularx}{\textwidth}{@{}X X r@{}}
+		\textbf{深圳大学统计计算研究所} & \textbf{国家自然科学基金-非参数统计推断} & 2015.03 -- 2015.07 \\
+	\end{tabularx}
+	\begin{itemize}
+		\item 参与研究生导师的科研项目，具体内容为半参数模型下的统计推断。负责的内容为考虑在扭曲（误差）数据下模型检验会遇到的问题，选择并构造合适的统计量，研究其渐进分布并做一般问题的假设检验。在统计量构造完成的基础上，选取已经发表过的方法进行实验对比。作为第二作者发表论文成果《Statistical inference on restricted partial linear regression models with partial distortion measurement errors》，SCI期刊Statistica Neerlandica. 
+	\end{itemize}
+	
+	\section{\faCogs\ Skills 专业技能}
+	\begin{itemize}[parsep=0.5ex]
+		\item 熟悉机器学习算法理论，掌握完整数据挖掘流程及规范，了解深度学习在视觉领域的应用。
+		\item 熟悉Linux平台，熟悉掌握Python/R/SQL编程语言，具备良好的数据结构和算法基础。
+		\item 具有海量数据处理经验，具备Hadoop/Spark/Hive分布式平台实践基础。
+		\item 发表英文SCI期刊一篇，大学英语六级，托福英语85，能流畅阅读英文技术文档。
+	\end{itemize}
+	
+	
+	\section{\faInfo\ More 个人评价}
+	本人硕士研究生统计学专业在读，本科信息与计算科学，热爱编程，喜欢数据分析相关方向的工作，具有较强的学习能力，能独立完成所承担的科研任务。熟悉Python, R, SAS, SQL等计算机语言，在校专业课程均取得优异的成绩，并连续两年获得优秀学生奖学金。
+	
+	%% Reference
+	%\newpage
+	%\bibliographystyle{IEEETran}
+	%\bibliography{mycite}
+\end{document}
